@@ -16,7 +16,7 @@ import json
 from time import time
 from random import randint, randrange
 import smtplib, ssl
-import gmaps
+# import gmaps
 
 def home(request):
     if request.method == 'POST':
@@ -31,6 +31,12 @@ def aboutus(request):
 
 def contactus(request):
     return render(request, 'role/contact.html')
+
+def guest(request):
+    return render(request, 'role/guest.html')
+
+def partnerus(request):
+    return render(request, 'role/partner.html')
 
 def dashboardM(request):
     username = request.user.username

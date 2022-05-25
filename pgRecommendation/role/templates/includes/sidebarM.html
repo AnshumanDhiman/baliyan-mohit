@@ -19,18 +19,19 @@
                     <li data-username="dashboard Default Ecommerce CRM Analytics Crypto Project" 
                         class="nav-item {% if 'index' in segment %} active {% endif %}">
                         <a href="{% url 'dashboardM' %}" class="nav-link "><span class="pcoded-micon"><i class="feather icon-home"></i></span><span class="pcoded-mtext">Dashboard</span></a>
-                    </li>
-					
+                    </li>	
 					<li data-username="dashboard Default Ecommerce CRM Analytics Crypto Project" 
                         class="nav-item {% if 'index' in segment %} active {% endif %}">
-                        <a href="{% url 'addPropertyM' %}" class="nav-link "><span class="pcoded-micon"><i class="feather icon-home"></i></span><span class="pcoded-mtext">Add Property</span></a>
+                        <a href="{% url 'searchPropertyM' %}" class="nav-link "><span class="pcoded-micon"><i class="feather icon-search"></i></span><span class="pcoded-mtext">Search Property</span></a>
                     </li>
-					
+                    <li data-username="dashboard Default Ecommerce CRM Analytics Crypto Project" 
+                        class="nav-item {% if 'index' in segment %} active {% endif %}">
+                        <a href="{% url 'contactus' %}" class="nav-link "><span class="pcoded-micon"><i class="feather icon-help-circle"></i></span><span class="pcoded-mtext">Help</span></a>
+                    </li>
 					<li data-username="dashboard Default Ecommerce CRM Analytics Crypto Project" 
                         class="nav-item {% if 'index' in segment %} active {% endif %}">
-                        <a href="{% url 'searchPropertyM' %}" class="nav-link "><span class="pcoded-micon"><i class="feather icon-home"></i></span><span class="pcoded-mtext">Search Property</span></a>
+                        <a href="{% url 'guest' %}" class="nav-link "><span class="pcoded-micon"><i class="feather icon-user-check"></i></span><span class="pcoded-mtext">Guest Policy</span></a>
                     </li>
-					
 					<li data-username="Disabled Menu" class="nav-item">
                         <a href="{% url 'home' %}" class="nav-link">
                             <span class="pcoded-micon"><i class="feather icon-power"></i></span><span class="pcoded-mtext">Logout</span>

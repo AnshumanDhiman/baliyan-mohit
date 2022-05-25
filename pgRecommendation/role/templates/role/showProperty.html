@@ -21,25 +21,76 @@
 									<table class="table" border="1" width="100%">
 									<tr>
 									<td>
-										House Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{props.house_name}} 
-										<br><br>
-										Address:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{props.address}} 
-										<br><br>
-										Rent:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{props.rent}} 
-										<br><br>
-										Facilities Available:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{props.facility}} 
-										<br><br>
-										PG Type:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{props.pg_type}} 
-										<br><br>
-										Number Of Rooms:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{props.no_of_rooms}} 
-										<br><br>
-										Nearby Facilities:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{props.near_by_facilities}}
+										<table style="border:none;">
+											<tr>
+												<td>
+										<strong>House Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>
+												</td>
+												<td>
+										{{props.house_name}} 
+									</td>
+										{% comment %} <br><br> {% endcomment %}
+										<tr>
+											<td>
+												<strong>Address:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>
+											</td>
+											<td>
+										{{props.address}} 
+											</td>
+										</tr>
+										
+										<tr>
+											<td>
+										<strong>Rent:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>
+											</td>
+											<td>
+										{{props.rent}} 
+										<td>
+										
+										<tr>
+											<td>
+												<strong>Facilities Available:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>
+											</td>
+											<td>
+										{{props.facility}} 
+											</td>
+										</tr>
+										
+										<tr>
+											<td>
+										<strong>PG Type:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>
+									</td>
+									<td>
+										{{props.pg_type}} 
+									</td>
+								</tr>
+									
+										<tr>
+											<td>
+										<strong>Number Of Rooms:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>
+									</td>
+									<td>
+										{{props.no_of_rooms}} 
+									</td>
+								</tr>
+										<br>
+										<tr>
+											<td>
+										<strong>Nearby Facilities:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>
+											</td>
+											<td>
+										{{props.near_by_facilities}}
+											</td>
+										</tr>
+										</table>
 									</td>
 									<td>
 										<a href=""><img class="" style="width:300px;height:200px;" src="/static/assets/images/user/{{props.image}}"></a>
 										<br><br>
-										<a href="https://www.uber.com/" target="_blank"><button name="bookCab" value="bookCab">Book Cab</button></a>
-										<a href="" ><button name="payOnline" value="payOnline">Pay Online</button></a>
+										<div >
+										<a href="https://www.uber.com/" target="_blank"><button name="bookCab" value="bookCab" class="btn btn-success">Book Cab</button></a>
+										<a href="https://www.sbiepay.sbi/secure/home" ><button name="payOnline" value="payOnline" class="btn btn-warning">Pay Online</button></a>
+										<div>
 									</td>
 									<tr>
 									</table>
